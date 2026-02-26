@@ -1,0 +1,71 @@
+1. Jelaskan apa yang dimaksud dengan NoSQL menggunakan pemahaman yang kalian ketahui !
+# Answer
+NoSQL adalah jenis database yang tidak menggunakan struktur tabel relasional seperti SQL. 
+NoSQL menyimpan data dengan struktur yang lebih fleksibel, misalnya dalam bentuk dokumen, 
+key-value, column-based, atau graph. Karena strukturnya tidak kaku, 
+NoSQL sangat cocok digunakan untuk data yang besar, cepat berubah, 
+dan tidak selalu memiliki format yang sama. 
+Selain itu, NoSQL dirancang untuk mudah diskalakan dan memiliki performa tinggi dalam menangani data dalam jumlah besar.
+
+2. Jelaskan kapan harus menggunakan NoSQL dan Relational Database Management System !
+# Answer
+NoSQL digunakan ketika data bersifat tidak terstruktur atau semi-terstruktur, 
+volumenya besar, dan membutuhkan akses yang cepat, seperti data log, data sensor, 
+atau data aktivitas pengguna. 
+NoSQL juga cocok ketika struktur data sering berubah dan tidak membutuhkan relasi tabel yang kompleks.
+
+Sementara itu, Relational Database Management System (RDBMS) digunakan ketika data terstruktur dengan jelas, 
+memiliki hubungan antar tabel, dan membutuhkan konsistensi data yang tinggi. 
+RDBMS sangat cocok untuk sistem transaksi seperti data keuangan, sistem pembayaran, 
+atau data pelanggan yang membutuhkan integritas data.
+
+3. Sebutkan contoh 2 tools/platform NoSQL selain ElasticSearch beserta keunggulan tools/platform tersebut !
+# Answer
+-MongoDB 
+Merupakan database NoSQL berbasis dokumen yang menyimpan data dalam format JSON-like. 
+Keunggulannya adalah struktur data yang fleksibel, mudah digunakan, 
+dan cocok untuk pengembangan aplikasi web dan mobile yang membutuhkan perubahan data secara dinamis.
+
+-Apache Cassandra
+Cassandra adalah database NoSQL yang dirancang untuk sistem terdistribusi. 
+Keunggulannya adalah kemampuannya menangani data dalam skala besar, 
+memiliki ketersediaan tinggi, dan tetap berjalan meskipun salah satu node mengalami kegagalan.
+
+4. Jelaskan apa yang Anda ketahui dari Airflow menggunakan pemahaman dan bahasa Anda sendiri !
+# Answer
+Airflow adalah tools untuk mengatur, menjadwalkan, dan memantau alur kerja (workflow) data. 
+Airflow menggunakan konsep DAG (Directed Acyclic Graph) untuk mendefinisikan urutan task yang harus dijalankan. 
+Dengan Airflow, proses seperti pengambilan data, pembersihan data, 
+dan pengiriman data ke database dapat dijalankan secara otomatis dan terjadwal, 
+sehingga mengurangi proses manual dan risiko kesalahan.
+
+5. Jelaskan apa yang Anda ketahui dari Great Expectations menggunakan pemahaman dan bahasa Anda sendiri !
+# Answer
+Great Expectations adalah tools yang digunakan untuk memvalidasi kualitas data. 
+Great Expectations memungkinkan pengguna untuk menetapkan aturan atau ekspektasi terhadap data, 
+seperti memastikan data tidak kosong, berada dalam rentang tertentu, atau memiliki tipe data yang sesuai. 
+Dengan tools ini, data dapat dipastikan valid dan konsisten sebelum digunakan untuk analisis 
+atau dimasukkan ke dalam sistem lebih lanjut.
+
+6. Jelaskan apa yang Anda ketahui dari Batch Processing menggunakan pemahaman dan bahasa Anda sendiri 
+(Definisi, Contoh Kasus Penggunaan, Tools, dll) !
+# Answer
+Batch Processing adalah metode pemrosesan data di mana data dikumpulkan terlebih dahulu lalu diproses 
+secara bersamaan dalam satu waktu tertentu, bukan secara real-time. 
+Metode ini biasanya digunakan untuk data berukuran besar yang tidak membutuhkan hasil secara langsung.
+
+Contoh penggunaan Batch Processing:
+- Laporan penjualan harian atau bulanan
+- Rekap transaksi keuangan
+- Pengolahan log aplikasi
+
+Tools yang sering digunakan:
+- Apache Hadoop
+- Apache Spark
+- Apache Airflow (untuk penjadwalan batch job)
+
+Batch Processing cocok digunakan karena lebih efisien dalam penggunaan resource dan 
+stabil untuk pemrosesan data dalam jumlah besar.
+
+
+

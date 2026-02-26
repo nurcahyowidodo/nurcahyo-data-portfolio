@@ -1,0 +1,33 @@
+DROP TABLE IF EXISTS table_m3;
+
+CREATE TABLE table_m3 (
+    "InvoiceNo" VARCHAR(20),
+    "StockCode" VARCHAR(20),
+    "Description" TEXT,
+    "Quantity" INT,
+    "InvoiceDate" varchar,
+    "UnitPrice" NUMERIC(10,2),
+    "CustomerID" float,
+    "Country" VARCHAR(100),
+    "Discount" NUMERIC(5,2),
+    "PaymentMethod" VARCHAR(50),
+    "ShippingCost" NUMERIC(10,2),
+    "Category" VARCHAR(100),
+    "SalesChannel" VARCHAR(50),
+    "ReturnStatus" VARCHAR(20),
+    "ShipmentProvider" VARCHAR(100),
+    "WarehouseLocation" VARCHAR(100),
+    "OrderPriority" VARCHAR(20)
+);
+
+COPY table_m3(
+	"InvoiceNo","StockCode","Description","Quantity","InvoiceDate",
+	"UnitPrice","CustomerID","Country","Discount",
+	"PaymentMethod","ShippingCost","Category","SalesChannel",
+	"ReturnStatus","ShipmentProvider","WarehouseLocation","OrderPriority"
+)
+FROM 'D:\Data Science\Hacktiv8\Tugas\Milestone\project-m3\P2M3_Nur_Cahyo_Widodo_data_raw.csv'
+DELIMITER ','
+CSV HEADER;
+
+SELECT * FROM table_m3;
